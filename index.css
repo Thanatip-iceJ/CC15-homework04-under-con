@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a {
+    position: absolute;
+    right: 17%;
+    top: 5%;
+}
+
+nav a:hover {
+    color: lightskyblue;
+    transition: .3s;
+}
+html {
+    background: linear-gradient(0deg, rgba(29,67,68,1) 17%, rgba(121,142,99,1) 100%);    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1024px;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.title h1 {
+    font-size: 72px;
+    text-align: center;
+    font-weight: 300;
+}
+
+h5 {
+    margin-top: 2rem;
+    font-size: 14px;
+    letter-spacing: .4rem;
+}
+
+button {
+    color: black;
+    background-color: rgb(122, 205, 233);
+    border: none;
+    padding: .5rem 2rem;
+    margin-top: 3rem;}
+
+button:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    box-shadow: 3px 3px 8px 0px rgba(138,128,128,1);
+    cursor: pointer;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.white {
+    background: white;
+    height: 12px;
+    width: 32rem;
+    box-shadow: 0 1px 4px darkgrey;
+}
+
+.loading {
+    position: relative;
+}
+
+.blue {
+    background-color: lightskyblue;
+    height: 12px;
+    width: 25rem;
+    animation: loading 3s ease infinite;
+} 
+
+/* .progress-bar p:nth-child(2) {
+    margin-top: 0px;
+} */
+.progress-bar p:nth-child(3) {
+    margin-top: -19px;
+    position: relative;
+    left: 30rem;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+.icon-box a {
+    display: block;
+    border: 2px white solid;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.icon-box a:hover {
+    color: lightskyblue;
+    transition: .3s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 80vw;
+    border: none;
+    background-color: white;
+    height: 1px;
+    margin-bottom: .5rem;
+}
+
+@keyframes loading {
+    0% {width: 0;}
+    100% {width: 25rem;}
+}
